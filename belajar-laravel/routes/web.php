@@ -33,4 +33,11 @@ Route::group(['namespace' => 'Backend'], function()
 {
 	Route::resource('dashboard', 'DashboardController');
 });
+
+Route::group(['namespace' => 'Backend'], function()
+{
+	Route::resource('dashboard', 'DashboardController');
+	//Route::resource('pendidikan', 'PendidikanController');
+	Route::resource('pengalaman_kerja', 'PengalamanKerjaController');
+});
 ?>
